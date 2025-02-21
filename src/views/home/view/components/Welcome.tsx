@@ -31,7 +31,7 @@ export default function WelCome() {
           alignItems: {
             xs: "center",
             sm: "center",
-            md: "flex-start",
+            md: "center",
             lg: "flex-start",
             xl: "flex-start",
           },
@@ -110,11 +110,13 @@ export default function WelCome() {
         </Typography>
         <Typography
           sx={{
+            mt: "10px",
             zIndex: 10,
             font: "Montserrat",
             color: "white",
             fontWeight: 800,
             letterSpacing: 0.2,
+            textAlign:'center',
             gap: "5px",
             "&:hover": {
               transition: "transform 0.3s ease-in-out",
@@ -128,6 +130,13 @@ export default function WelCome() {
               lg: "50px",
               xl: "72px",
             },
+            lineHeight:{
+                xs: "56px",
+                sm: "56px",
+                md: "45px",
+                lg: "50px",
+                xl: "72px",
+            }
           }}
         >
           Food For Dogs
