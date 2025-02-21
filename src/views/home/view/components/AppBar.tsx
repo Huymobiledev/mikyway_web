@@ -30,7 +30,13 @@ export default function ViewAppBar(props: any) {
       </Typography>
       <Box
         sx={{
-          display: "flex",
+          display: {
+            xs: "none",
+            sm: "none",
+            md: "flex",
+            lg: "flex",
+            xl: "flex",
+          },
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
@@ -76,6 +82,29 @@ export default function ViewAppBar(props: any) {
             )}
           </Box>
         ))}
+      </Box>
+      <Box
+      sx={{
+        display: {
+          xs: "flex",
+          sm: "flex",
+          md: "none",
+          lg: "none",
+          xl: "none",
+        },
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "5px",
+        cursor: "pointer",
+        img:{
+          width: "25px",
+          height: "25px",
+          objectFit: "cover",
+        }
+      }}
+      >
+        <img src={'/assets/icons/ic_more.png'}/>
       </Box>
     </Box>
   );
