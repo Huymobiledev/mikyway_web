@@ -5,7 +5,7 @@ import { ThemeProvider } from "@mui/system";
 
 import "@/styles/globals.css";
 import "@/styles/nprogress.css";
-
+import "../../public/assets/js/font.css"
 import { Provider } from "react-redux";
 import { SnackbarProvider } from "notistack";
 
@@ -155,7 +155,8 @@ const WebApp = (props: AppProps) => {
                     justifyContent: "flex-start",
                     alignItems: "center",
                     backgroundColor: "white",
-                    overflowX:"hidden"
+                    overflowX:"hidden",
+                    fontFamily: "Montserrat",
                   }}
                 >
                   <Component {...pageProps} />
