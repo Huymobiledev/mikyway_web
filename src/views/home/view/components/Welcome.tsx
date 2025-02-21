@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function WelCome() {
   const des =
-    "Find the best living room ideas, designs & inspiration to match your style. Browse through images of living room decor & colours to create your perfect home.";
+    "We not only provide food but also provide nutritious, safe and loving meals, so that every cat is healthy, happy and a companion for the long haul.";
 
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -80,7 +80,7 @@ export default function WelCome() {
           sx={{
             zIndex: 10,
             fontFamily: "Montserrat",
-            background: "linear-gradient(90deg,rgb(250, 61, 14),rgb(161, 72, 4))",
+            background: "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             fontWeight: 900,
@@ -150,7 +150,13 @@ export default function WelCome() {
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
               whiteSpace: "pre-line",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: {
+                xs: "center",
+                sm: "center",
+                md: "flex-start",
+                lg: "flex-start",
+                xl: "flex-start",       
+              },
               alignItems: "center",
               "&:hover": {
                 transition: "transform 0.3s ease-in-out",
