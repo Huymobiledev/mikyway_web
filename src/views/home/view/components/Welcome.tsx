@@ -110,6 +110,30 @@ export default function WelCome() {
         </Typography>
         <Typography
           sx={{
+            font: "Montserrat",
+            color: "#fce219",
+            fontWeight: 800,
+            letterSpacing: 1,
+            gap: "5px",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+            zIndex: 10,
+            "&:hover": {
+              transition: "transform 0.3s ease-in-out",
+              transform: "scale(1.1)",
+            },
+            fontSize: {
+              xs: "18px",
+              sm: "20px",
+              md: "24px",
+              lg: "26px",
+              xl: "28px",
+            },
+          }}
+        >
+          {'Thức ăn ngon, Boss vui trọn ngày'}
+        </Typography>
+        <Typography
+          sx={{
             mt: "10px",
             zIndex: 10,
             font: "Montserrat",
@@ -198,30 +222,7 @@ export default function WelCome() {
             <span id={"span_des"}>{displayedText}</span>
           </motion.div>
         </Box>
-        <Typography
-          sx={{
-            font: "Montserrat",
-            color: "#fce219",
-            fontWeight: 800,
-            letterSpacing: 1,
-            gap: "5px",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
-            zIndex: 10,
-            "&:hover": {
-              transition: "transform 0.3s ease-in-out",
-              transform: "scale(1.1)",
-            },
-            fontSize: {
-              xs: "18px",
-              sm: "20px",
-              md: "24px",
-              lg: "26px",
-              xl: "28px",
-            },
-          }}
-        >
-          From $29.99
-        </Typography>
+       
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
