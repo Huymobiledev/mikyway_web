@@ -33,12 +33,12 @@ export default function Product() {
         <Marquee className="hide-scroll" speed={100}>
           {dataProductDog.map((item, index) => (
             <motion.div
+              key={index}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             >
               <Box
-                key={index}
                 sx={{
                   display: "flex",
                   flexDirection: "column",

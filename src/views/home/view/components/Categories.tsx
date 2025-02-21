@@ -23,6 +23,7 @@ export default function ViewCategories() {
       >
         {dataCategories.map((item, index) => (
           <motion.div
+            key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
@@ -38,11 +39,11 @@ export default function ViewCategories() {
                 height: "100%",
                 gap: "10px",
                 "&:hover": {
-                    img: {
-                      transition: "transform 0.3s ease-in-out",
-                      transform: "scale(1.3)",
-                    },
+                  img: {
+                    transition: "transform 0.3s ease-in-out",
+                    transform: "scale(1.3)",
                   },
+                },
                 img: {
                   width: "15vw",
                   height: "auto",
